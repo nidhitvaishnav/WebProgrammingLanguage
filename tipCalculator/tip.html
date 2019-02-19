@@ -1,0 +1,27 @@
+<html>
+</<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Tip Calculator</title></head>
+    <script>
+      window.onload=function(){
+        document.getElementById("ten").onclick=function(){
+        CalculatorTip(10);
+        };
+        document.getElementById("fifteen").onclick=function(){
+        CalculatorTip(15);
+        };
+      };
+      function CalculatorTip(per){
+        document.getElementById("total").value = document.getElementById("bill").value*(1+per/100);
+      }
+      </script>
+
+  <body>
+    Bill: <<input type="text" name="bill" id="bill"><br>
+    <button id="ten">10%</button><br>
+    <button id="fifteen">15%</button><br>
+    Total: <input type="text" name="total" id="total">
+  </body>
+</html>

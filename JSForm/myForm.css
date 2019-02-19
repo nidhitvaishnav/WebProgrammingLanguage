@@ -1,0 +1,84 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+input[type=text]{
+	width: 41%;
+	padding:6px 12px;
+	background-color: #DCDCDC;
+	align-self: center;
+
+}
+::placeholder {
+  color: #808080;
+  opacity: 1; /* Firefox */
+}
+input[type=email], input[type=password]{
+	width: 90%;
+	padding:6px 12px;
+	background-color: #DCDCDC;
+	align-self: center;
+	margin-left: "100px";
+}
+
+input[type=submit]{
+	padding:6px 12px;
+	background-color: #00bfff;
+	color:#ffffff;
+	width:25%;
+	font-size: 16px;
+}
+input[type=checkbox]{
+	width:"auto";
+	color:#808080;
+}
+h2{
+	text-shadow: 0px 0px 2px black;
+}
+.info{
+	color: #808080;
+}
+hr{
+	color: #808080;
+	width: 97%;
+	margin-left: 0;
+}
+form {
+  position: relative;
+  width: 25%;
+  height: 75%;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px 22px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+.container{
+	height:83%;
+	width:98%;
+  	padding-top: 50px;
+}
+
+.linkEffect{
+	color:#00bfff;
+	font-weight: bold;
+}
+.cBox{
+	color:#808080;
+}
+.end{
+  height: 3%;
+  opacity: 0.4;
+  background-color: #D6EAF8	;
+  color: #03105B;
+  text-align: center;
+  vertical-align: middle;
+  
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>my Form</title>
+	<link rel="stylesheet" type="text/css" href="myForm.css">
+	<script>
+	function validateFields() {
+	    var fName = document.getElementById("fName");
+		var lName=document.getElementById("lName");
+		var email=document.getElementById("email");
+		var pword=document.getElementById("pword");
+		var cPword=document.getElementById("cPword");
+		var checkBox = document.getElementById("policies");
+
+	    if (fName.value == "") {
+	        fName.style.backgroundColor = "red";
+	        alert("First name is mandatory.");
+	       	return false;
+	    }
+	    else{
+	        fName.style.backgroundColor = "";
+	    }
+	    if (lName.value == "") {
+	        lName.style.backgroundColor = "red";
+	        alert("Last name is mandatory.");
+	        return false;
+	    }
+	    else{
+	        lName.style.backgroundColor = "";
+	    }
+	    if (email.value == "") {
+	        email.style.backgroundColor = "red";
+	        alert("email is mandatory.");
+	        return false;
+	    }
+	    else{
+	        email.style.backgroundColor = "";
+	    }
+	    if (pword.value == "") {
+	        pword.style.backgroundColor = "red";
+	        alert("password is mandatory.");
+	        return false;
+	    }
+	    else{
+	        pword.style.backgroundColor = "";
+	    }
+	    if (cPword.value == "") {
+	        cPword.style.backgroundColor = "red";
+	        alert("confirm password is mandatory.");
+	        return false;
+	    }
+	    else{
+	        cPword.style.backgroundColor = "";
+	    }
+	    if(pword.value!=cPword.value){
+	    	pword.style.backgroundColor = "red";
+	    	cPword.style.backgroundColor = "red";
+			alert("Passwords should match.");
+			return false;
+		}
+		else{
+			pword.style.backgroundColor = "";
+	    	cPword.style.backgroundColor = "";
+		}
+		if(checkBox.checked==false){
+			alert("accepting policies is mandatory.")
+			return false;
+		}
+	}
+
+	function validateForm(){
+		if (validateFields()==false){
+			return false;
+		}
+		else{
+			alert("Form is successfully submitted.")
+			return true;
+		}
+		
+	}	
+
+	</script>
+</head>
+<body background="bg.jpg">
+	<div class="container">
+	<form name="myForm" onsubmit="return validateForm();">
+		<h2>Sign Up</h2>
+		<h4 class="info">Please fill in this form to create an account!</h4>
+		<hr><br>
+
+		<input type="text" name="fName" id="fName" placeholder="First Name">
+		<input type="text" name="lName" id="lName" value="" placeholder="Last Name"><br><br>
+		<input type="email" name="email" id="email" value="" placeholder="Email"><br><br>
+		<input type="password" name="password" id="pword" value="" placeholder="Password"><br><br>
+		<input type="password" name="confirmPassword" id="cPword" value="" placeholder="Confirm Password"><br><br>
+		<div class="cBox">
+		<input type="checkbox" id="policies" name="policies" value="checked"> I accept the <span class="linkEffect">Term of Use</span> & <span class="linkEffect">Privacy Policy</span> <br><br>
+		</div>
+		<input type="submit" name="signUp" value="Sign Up">
+	</form>
+	</div>
+	<div class="end">
+      <h4>
+        CS 6314.002 - Practice work 2 by ntv170030
+      </h4>
+    </div>
+</body>
+</html>

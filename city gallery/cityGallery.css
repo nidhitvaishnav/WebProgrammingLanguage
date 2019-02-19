@@ -1,0 +1,102 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.title{
+  display: table-row;
+  height: 15%;
+  background-color: #C0C0C0	;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 85px;
+}
+.page{
+  height: 80%;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+.left{
+  float: left;
+  width: 15%;
+  color: blue;
+  padding-top: 20px;
+  line-height: 25px;
+  text-decoration: none;
+}
+a.menuLink:link{
+  color: white;
+  text-decoration: none;
+}
+a.leftLink:link{
+  color: blue;
+  padding-left: 10px;
+  text-decoration: none;
+}
+a.menuLink:visited{
+  color: white;
+  text-decoration: none;
+}
+a.leftLink:visited{
+  color: blue;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.right{
+  float: right;
+  width:85%;
+}
+.page .seperator{
+  width: 1px;
+  background: black;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  left: 15%;
+  top:18%;
+  bottom: 9%;
+
+}
+.menubar{
+  background-color: black;
+  color: white;
+  word-spacing: 35px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+img{
+  float: left;
+  padding-right: 30px;
+}
+.name{
+  padding-right: 30px;
+  padding-left: 20px;
+}
+.content{
+  padding-left: 20px;
+}
+.end{
+  display: table-row;
+  height: 5%;
+  background-color: #C0C0C0	;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height:  20px;
+}
+.displayContent:target{
+  display:block !important;
+}

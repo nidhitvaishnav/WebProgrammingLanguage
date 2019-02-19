@@ -1,0 +1,6 @@
+- html code is inside home.html.
+- This code uses cityGallery.css file as the external css.
+- All the image files used by given html is inside img directory.
+- To run the file, click on home.html
+- Initially it will display page layout, but not the content (details about city).
+- Once you click on the link of city, it will display the details of the city.
